@@ -251,23 +251,24 @@ img {
 }
 
 .hero {
-  padding: 0;
+  padding: 200px 0;
   text-align: center;
-  /* background-color: var(--background-hero-color); */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_back.jpg);
+  background-size: cover;
+  background-position: center;
+   /* background-color: var(--background-hero-color); */
   /* margin-bottom: 94px; */
   /* height: 600px;  */
 }
 
 .overlay {
-  padding-top: 200px;
+  /* padding-top: 200px;
   min-height: 600px;
   max-width: 1600px;
   margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero_back.jpg);
-  background-size: cover;
-  background-position: center;
+  margin-right: auto; */
+  
 }
 
 .hero-title {
@@ -327,9 +328,11 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 528px;
+  width: 100%;
+  /* height: 581px; */
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -343,14 +346,17 @@ img {
 
 .btn-modal {
   display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   margin-left: auto;
-  margin-top: 8px;
-  margin-right: 8px;
+  /* margin-top: 8px; */
+  /* margin-right: 8px; */
   cursor: pointer;
   background: var(--white-color);
   border: 1px solid var(--backdrop-background);
@@ -370,13 +376,13 @@ img {
   color: var(--accent-color);
 }
 
-.modal-form {
+/* .modal-form {
   margin-left: 40px;
   margin-right: 40px;
-}
+} */
 
 .modal-form-title {
-  margin: 2px 40px 12px;
+  margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -663,9 +669,9 @@ margin-left: 0
 
 .section.coworkers {
   background-color: var(--grey-background-color);
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  /* max-width: 1600px; */
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .team-card {
@@ -912,16 +918,19 @@ width: 570px;
   align-items: center;
   text-align: justify;
 }
-
+/* 
 .subscription-send {
   display: flex;
   position: relative;
   justify-content: left;
-}
+} */
 
 .button-subscription {
 
   display: inline-block;
+  position: relative;
+  /* justify-content: left; */
+
   width: 200px;
   height: 50px;
   align-items: center;
